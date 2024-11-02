@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- membuat navbar menggunakan bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- navbar-brand untuk logo/nama website -->
+            <a class="navbar-brand" href="#">Urban Games</a>
+            <!-- button colapse untuk membuat burger menu pada web, dan collapse agar navbar dapat menyesuaikan pada layar perangkat kecil misal hp -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+            <!-- untuk logo buttonnya pakai span -->
+            <span class="navbar-toggler-icon"></span> <!-- kita bisa membuat logo custom dgn huruf atau simbol dgn cara menuliskan sesuatu diantara tag span <span> || </span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- membuat item navbar di dalam burger menu -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- nav item untuk membuat halaman apa saja yang ada di web muncul pada navbar misal halaman home,about us,dll -->
+                <li class="nav-item">
+                    <!-- nav link active burguna untuk mengetahui user berada pada halaman home dgn mempertebal teks home -->
+                    <a class="nav-link active" aria-current="page" href="#">Home</a> <!-- kita dapat menggunakan href untuk menghubungkan item navbar dgn halaman yg bersangkutan, sehingga saat item navbar ditekan ia akan langsung mengarahkan ke halaman yg ada di web -->
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <!-- membuat fitur menu dropdown pada web -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Daftar Games
+                    </a>
+                    <!-- menu dropdown pada navbar -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="game1/apple.html">Apple Catcher</a></li>
+                        <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                        <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                        <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- membuat menu search -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

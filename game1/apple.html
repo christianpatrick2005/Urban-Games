@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico" /> <!-- memberi gambar pada header -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Catcher</title>
+  </head>
+  <body>
+
+    <header>
+      <p>Phaser Demo | Apple Catcher</p>
+    </header>
+
+    <main>
+      <canvas id="gameCanvas"></canvas>
+      <div id="gameStartDiv" class="gameUI">
+        <h1>Apple Catcher</h1>
+        <p>Kamu hanya memiliki waktu 30 detik untuk menangkap apel</p>
+        <p>jika kamu menangkap lebih dari 10 apel kamu menang</p>
+        <p>jika kamu menangkap kurang dari 10 apel kamu kalah</p>
+        <p>Click the start button to play</p>
+        <button id="gameStartBtn">START</button>
+      </div>
+      <div id="gameEndDiv" class="gameUI">
+        <p>Game Over</p>
+        <h1>You <span id="gameWinLoseSpan"></span></h1>
+        <h1>Final Score: <span id="gameEndScoreSpan"></span></h1>
+        <p>Refresh the Page to play again</p>
+        <button id="HomeBtn" href="/index.html">Home</button>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>Created by Patrick 2024</p>
+    </footer>
+
+    <script type="module" src="main.js"></script>   
+  </body>
+</html>

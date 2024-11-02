@@ -140,7 +140,8 @@ class GameScene extends Phaser.Scene{
   }
 
   gameOver(){
-    this.sys.game.destroy(true)
+    // this.sys.game.destroy(true)
+    this.sys.game.pause(true)
     if(this.points >= 10) {
       gameEndScoreSpan.textContent = this.points
       gameWinLoseSpan.textContent = "Win!"
@@ -150,7 +151,7 @@ class GameScene extends Phaser.Scene{
     }
 
     gameEndDiv.style.display="Flex" //memanggil html menu game over
-  }
+  } 
 }
 
 const config = {
@@ -178,3 +179,10 @@ gameStartBtn.addEventListener("click", ()=>(
   gameStartDiv.style.display="none",
   game.scene.resume("scene-game")
 ))
+
+const homeBtn = document.getElementById("HomeBtn");
+homeBtn.addEventListener("click", () => {
+    window.location.href = "../index.html";
+});
+
+
