@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
 </head>
 <body>
     <!-- membuat navbar menggunakan bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar bg-black border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
             <!-- navbar-brand untuk logo/nama website -->
-            <a class="navbar-brand" href="#">Urban Games</a>
+            <a class="navbar-brand">
+                <img src="gambar/Logo Urban Games.png" alt="" width="50" height="40">
+                Urban Games
+            </a>
+
             <!-- button colapse untuk membuat burger menu pada web, dan collapse agar navbar dapat menyesuaikan pada layar perangkat kecil misal hp -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
             <!-- untuk logo buttonnya pakai span -->
@@ -22,7 +28,7 @@
                 <!-- nav item untuk membuat halaman apa saja yang ada di web muncul pada navbar misal halaman home,about us,dll -->
                 <li class="nav-item">
                     <!-- nav link active burguna untuk mengetahui user berada pada halaman home dgn mempertebal teks home -->
-                    <a class="nav-link active" aria-current="page" href="#">Home</a> <!-- kita dapat menggunakan href untuk menghubungkan item navbar dgn halaman yg bersangkutan, sehingga saat item navbar ditekan ia akan langsung mengarahkan ke halaman yg ada di web -->
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a> <!-- kita dapat menggunakan href untuk menghubungkan item navbar dgn halaman yg bersangkutan, sehingga saat item navbar ditekan ia akan langsung mengarahkan ke halaman yg ada di web -->
                 </li>
                 <li class="nav-item disabled">
                     <a class="nav-link" href="#">About Us</a>
@@ -49,5 +55,7 @@
             </div>
         </div>
     </nav>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
