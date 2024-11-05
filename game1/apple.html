@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple Catcher</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-  </head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">  </head>
   <body>
     
     <header>
       <p>Phaser Demo | Apple Catcher</p>
+      <div id="navbar"></div>
     </header> 
 
-    <main>
+
+    <main class="container">
       <canvas id="gameCanvas"></canvas>
       <div id="gameStartDiv" class="gameUI">
         <h1>Apple Catcher</h1>
@@ -29,6 +29,7 @@
         <h1>Final Score: <span id="gameEndScoreSpan"></span></h1>
         <p>Refresh the Page to play again</p>
         <button id="HomeBtn" href="/index.html">Home</button>
+        <button id="restartBtn">Reset</button>
       </div>
 
     </main>
@@ -37,6 +38,15 @@
       <p>Created by Patrick 2024</p>
     </footer>
 
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+       // Memanggil Navbar dengan memuat isi navbar.html
+ 
+        $.get("/nav-bar/navbar.html", function(data){
+    $("#navbar").replaceWith(data);
+});
+    </script>
     <script type="module" src="main.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

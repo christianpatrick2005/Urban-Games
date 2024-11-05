@@ -1,4 +1,4 @@
-import './style.css'
+import './test2.css'
 import Phaser, { Physics } from 'phaser'
 
 // parameter lebar dan panjang kanvas game
@@ -184,5 +184,3 @@ const homeBtn = document.getElementById("HomeBtn");
 homeBtn.addEventListener("click", () => {
     window.location.href = "../index.html";
 });
-
-
